@@ -23,6 +23,9 @@ by reproduction.
 # Elixir
 TODO: Add Elixir cheat sheet
 
+# Mob programming
+TODO: Add mob programming
+
 # Let's start coding
 We can start by cloning this repository into our own machines.
 ```sh
