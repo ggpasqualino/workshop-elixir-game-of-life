@@ -57,3 +57,14 @@ Finished in 0.06 seconds
 ```
 
 Now, let's open this repository in our favorite code editor and start coding!
+
+![moments later](https://media.giphy.com/media/xUPJPnaANa5SFyTlTi/giphy.gif)
+
+We can create new generations of the game correctly, but how can we vizualize it?
+There is a module [GameRenderer](lib/game_renderer.ex) in this repository that we
+can use as base to render one generation of the game.
+
+![](docs/rendered-game.png)
+
+Now that looks cool!
+Let's close now with the game playing itself. For that, we will use a GenServer.
