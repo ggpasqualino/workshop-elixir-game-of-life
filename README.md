@@ -84,3 +84,6 @@ Now that we can create new generations of the game based on the current one, let
 
 That looks cool!
 To close, let's make the game play itself usinng a [GenServer](game_server.ex) we have defined.
+
+## Extra Topics
+Supervision trees - what happens when our `GameServer` crashes?
