@@ -1,4 +1,18 @@
-# Game of Life
+# Workshop
+
+This is intended as a support material for Coaches to teach workshops that introduce Elixir to people that already knows some programming. 
+
+Nevertheless, feel free to use it for self study.
+
+This was inspired by the workshop [Rob Martin - Fun with Elixir, Automata, and Zombies](https://www.lambdadays.org/lambdadays2020#workshops) held in Lambda Days.
+
+## Preparation
+
+- [Install](https://elixir-lang.org/install.html) Elixir
+- [Install](https://code.visualstudio.com/Download) VSCode
+  - Optionally [install](https://marketplace.visualstudio.com/items?itemName=elixir-lsp.elixir-ls) ElixirLS plugin
+
+## Game of Life
 
 The [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) is a
 zero-player game, which means that it requires no player interacting with it.
@@ -21,10 +35,12 @@ by reproduction.
 ![game of life example](https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif)
 
 # Elixir
-TODO: Add Elixir cheat sheet
+Elixir is a dynamic, functional language designed for building scalable and maintainable applications.
 
-# Mob programming
-TODO: Add mob programming
+Elixir leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems, while also being successfully used in web development and the embedded software domain.
+
+- [Cheatsheet](https://devhints.io/elixir)
+- [Getting started](https://elixir-lang.org/getting-started/basic-types.html)
 
 # Let's start coding
 We can start by cloning this repository into our own machines.
@@ -58,13 +74,13 @@ Finished in 0.06 seconds
 
 Now, let's open this repository in our favorite code editor and start coding!
 
+Let's start together, then we will continue in small groups of 2 to 3 people.
+
 ![moments later](https://media.giphy.com/media/xUPJPnaANa5SFyTlTi/giphy.gif)
 
-We can create new generations of the game correctly, but how can we vizualize it?
-There is a module [GameRenderer](lib/game_renderer.ex) in this repository that we
-can use as base to render one generation of the game.
+Now that we can create new generations of the game based on the current one, let's render it to the termnal using the module [GameRenderer](lib/game_renderer.ex) within this repository.
 
 ![](docs/rendered-game.png)
 
-Now that looks cool!
-Let's close now with the game playing itself. For that, we will use a GenServer.
+That looks cool!
+To close, let's make the game play itself usinng a [GenServer](game_server.ex) we have defined.
