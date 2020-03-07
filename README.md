@@ -76,14 +76,18 @@ Now, let's open this repository in our favorite code editor and start coding!
 
 Let's start together, then we will continue in small groups of 2 to 3 people.
 
-![moments later](https://media.giphy.com/media/xUPJPnaANa5SFyTlTi/giphy.gif)
+![Moments later](https://media.giphy.com/media/xUPJPnaANa5SFyTlTi/giphy.gif)
 
 Now that we can create new generations of the game based on the current one, let's render it to the termnal using the module [GameRenderer](lib/game_renderer.ex) within this repository.
 
-![](docs/rendered-game.png)
+![Static game rendered with emojis](docs/static-game.png)
 
 That looks cool!
 To close, let's make the game play itself usinng a [GenServer](game_server.ex) we have defined.
 
+![Dynamic game rendered with emojis](docs/dynamic-game.gif)
+
 ## Extra Topics
-Supervision trees - what happens when our `GameServer` crashes?
+- Supervision trees - what happens when our `GameServer` crashes?
+- Application - how do we start the game without using iex?
+- Executables - how can we create an executable that can be run on any system with Erlang installed?
