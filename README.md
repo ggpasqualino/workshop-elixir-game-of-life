@@ -21,7 +21,7 @@ The original setup consists of an infinite, 2-dimensional grid of cells,
 and each cell can be `alive` or `dead`. At each step of time (`tick`),
 the following rules apply to decide what happens with each cell.
 
-## Rules
+### Rules
 1.  Any live cell with fewer than two live neighbours dies, as if by
 underpopulation.
 2.  Any live cell with two or three live neighbours lives on to the next
