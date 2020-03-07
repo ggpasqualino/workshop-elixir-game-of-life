@@ -34,7 +34,7 @@ by reproduction.
 ### Example
 ![game of life example](https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif)
 
-# Elixir
+## Elixir
 Elixir is a dynamic, functional language designed for building scalable and maintainable applications.
 
 Elixir leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems, while also being successfully used in web development and the embedded software domain.
@@ -42,7 +42,7 @@ Elixir leverages the Erlang VM, known for running low-latency, distributed and f
 - [Cheatsheet](https://devhints.io/elixir)
 - [Getting started](https://elixir-lang.org/getting-started/basic-types.html)
 
-# Let's start coding
+## Let's start coding
 We can start by cloning this repository into our own machines.
 ```sh
 git clone https://github.com/ggpasqualino/workshop-elixir-game-of-life game-of-life
