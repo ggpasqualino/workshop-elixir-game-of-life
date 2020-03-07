@@ -4,7 +4,7 @@ This is intended as a support material for Coaches to teach workshops that intro
 
 Nevertheless, feel free to use it for self study.
 
-This was inspired by the workshop [Rob Martin - Fun with Elixir, Automata, and Zombies](https://www.lambdadays.org/lambdadays2020#workshops) held in Lambda Days.
+This was inspired by the workshop [Fun with Elixir, Automata, and Zombies](https://www.facebook.com/events/1032796127083723) held by [Rob Martin](https://twitter.com/version2beta) in [Lambda Days 2020](https://www.lambdadays.org/lambdadays2020).
 
 ## Preparation
 
