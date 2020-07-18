@@ -20,7 +20,7 @@ defmodule Features.GameOfLifeTest do
       # D A D
       # D A D
       # D A D
-      current_generation = GameOfLife.new([{0, 1}, {1, 1}, {2, 1}])
+      current_generation = GameOfLife.new([{1, 0}, {1, 1}, {1, 2}])
 
       next_generation = GameOfLife.next_generation(current_generation)
 
@@ -34,7 +34,7 @@ defmodule Features.GameOfLifeTest do
       # D A D
       # A A A
       # D A D
-      current_generation = GameOfLife.new([{0, 1}, {1, 0}, {1, 1}, {1, 2}, {2, 1}])
+      current_generation = GameOfLife.new([{1, 0}, {0, 1}, {1, 1}, {2, 1}, {1, 2}])
 
       next_generation = GameOfLife.next_generation(current_generation)
 
@@ -48,7 +48,7 @@ defmodule Features.GameOfLifeTest do
       # A A A
       # D D D
       # D D D
-      current_generation = GameOfLife.new([{0, 0}, {0, 1}, {0, 2}])
+      current_generation = GameOfLife.new([{0, 0}, {1, 0}, {2, 0}])
 
       next_generation = GameOfLife.next_generation(current_generation)
 
