@@ -60,11 +60,11 @@ And this reveals that we have 4 tests defined, from which 3 are skipped and
 ```sh
   1) test Any live cell with fewer than two live neighbors dies, as if by underpopulation. (Features.GameOfLifeTest)
      test/features/game_of_life_test.exs:5
-     ** (UndefinedFunctionError) function GameOfLife.new/0 is undefined or private
-     code: current_generation = GameOfLife.new()
+     ** (UndefinedFunctionError) function GameOfLife.new/1 is undefined or private
+     code: current_generation = GameOfLife.new([{1, 1}])
      stacktrace:
-       (game_of_life) GameOfLife.new()
-       test/features/game_of_life_test.exs:6: (test)
+       (game_of_life 0.1.0) GameOfLife.new([{1, 1}])
+       test/features/game_of_life_test.exs:9: (test)
 
 
 
