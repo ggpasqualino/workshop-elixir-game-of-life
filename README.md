@@ -22,13 +22,13 @@ and each cell can be `alive` or `dead`. At each step of time (`tick`),
 the following rules apply to decide what happens with each cell.
 
 ## Rules
-1.  Any live cell with fewer than two live neighbours dies, as if by
+1.  Any live cell with fewer than two live neighbors dies, as if by
 underpopulation.
-2.  Any live cell with two or three live neighbours lives on to the next
+2.  Any live cell with two or three live neighbors lives on to the next
 generation.
-3.  Any live cell with more than three live neighbours dies, as if by
+3.  Any live cell with more than three live neighbors dies, as if by
 overpopulation.
-4.  Any dead cell with exactly three live neighbours becomes a live cell, as if
+4.  Any dead cell with exactly three live neighbors becomes a live cell, as if
 by reproduction.
 
 ## Example
@@ -58,7 +58,7 @@ mix test
 And this reveals that we have 4 tests defined, from which 3 are skipped and
 1 is failing.
 ```sh
-  1) test Any live cell with fewer than two live neighbours dies, as if by underpopulation. (Features.GameOfLifeTest)
+  1) test Any live cell with fewer than two live neighbors dies, as if by underpopulation. (Features.GameOfLifeTest)
      test/features/game_of_life_test.exs:5
      ** (UndefinedFunctionError) function GameOfLife.new/0 is undefined or private
      code: current_generation = GameOfLife.new()
