@@ -10,7 +10,7 @@ This was inspired by the workshop [Fun with Elixir, Automata, and Zombies](https
 
 - [Install](https://elixir-lang.org/install.html) Elixir
 - [Install](https://code.visualstudio.com/Download) VSCode
-  - Optionally [install](https://marketplace.visualstudio.com/items?itemName=elixir-lsp.elixir-ls) ElixirLS plugin
+  - Optionally [install](https://marketplace.visualstudio.com/items?itemName=JakeBecker.elixir-ls) ElixirLS plugin
 
 ## Game of Life
 
@@ -83,7 +83,7 @@ Now that we can create new generations of the game based on the current one, let
 ![Static game rendered with emojis](docs/static-game.png)
 
 That looks cool!
-To close, let's make the game play itself usinng a [GenServer](game_server.ex) we have defined.
+To close, let's make the game play itself usinng a [GenServer](lib/game_server.ex) we have defined.
 
 ![Dynamic game rendered with emojis](docs/dynamic-game.gif)
 
