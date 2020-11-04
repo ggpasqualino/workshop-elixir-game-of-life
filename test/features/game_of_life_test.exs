@@ -1,21 +1,6 @@
 defmodule Features.GameOfLifeTest do
   use ExUnit.Case
 
-  describe "Any live cell with fewer than two live neighbors" do
-    test "dies, as if by underpopulation." do
-      #   0 1 2
-      # 0 D D D
-      # 1 D A D
-      # 2 D D D
-      current_generation = GameOfLife.new([{1, 1}])
-
-      next_generation = GameOfLife.next_generation(current_generation)
-
-      refute GameOfLife.alive?(next_generation, {1, 1})
-    end
-  end
-
-  @tag :skip
   describe "Any live cell with two or three live neighbors" do
     test "lives on to the next generation" do
       #   0 1 2
@@ -27,6 +12,21 @@ defmodule Features.GameOfLifeTest do
       next_generation = GameOfLife.next_generation(current_generation)
 
       assert GameOfLife.alive?(next_generation, {1, 1})
+    end
+  end
+
+  @tag :skip
+  describe "Any live cell with fewer than two live neighbors" do
+    test "dies, as if by underpopulation." do
+      #   0 1 2
+      # 0 D D D
+      # 1 D A D
+      # 2 D D D
+      current_generation = GameOfLife.new([{1, 1}])
+
+      next_generation = GameOfLife.next_generation(current_generation)
+
+      refute GameOfLife.alive?(next_generation, {1, 1})
     end
   end
 
