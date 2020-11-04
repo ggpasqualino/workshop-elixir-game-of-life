@@ -22,8 +22,8 @@ defmodule GameServer do
 
   @impl true
   def handle_info(:tick, %State{game: game, generate_next: generate_next} = state) do
+    GameRenderer.render(game)
     new_generation = generate_next.(game)
-    GameRenderer.render(new_generation)
 
     schedule_tick()
     {:noreply, %{state | game: new_generation}}
