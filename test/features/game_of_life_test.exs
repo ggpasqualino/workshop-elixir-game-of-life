@@ -11,7 +11,7 @@ defmodule Features.GameOfLifeTest do
 
       next_generation = GameOfLife.next_generation(current_generation)
 
-      assert GameOfLife.dead?(next_generation, {1, 1})
+      refute GameOfLife.alive?(next_generation, {1, 1})
     end
   end
 
@@ -41,7 +41,7 @@ defmodule Features.GameOfLifeTest do
 
       next_generation = GameOfLife.next_generation(current_generation)
 
-      assert GameOfLife.dead?(next_generation, {1, 1})
+      refute GameOfLife.alive?(next_generation, {1, 1})
     end
   end
 
